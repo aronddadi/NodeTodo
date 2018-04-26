@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To do </h1>
+    <form action="/add"method="post">
+        <input type="text"name="taskName" value="">
+        <input type="submit" name="" value="SUBMIT ME">
+    </form>
+
+    <ul>
+        <% tasks.forEach((task)=>{  %>
+        
+            <li><%= task.name %></li>
+
+        <% }); %>
+    </ul>
+</body>
+</html>
